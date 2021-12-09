@@ -9,6 +9,7 @@ public class Teacher extends Employee {
 	// tinh luong giao vien
 	@Override
 	public float getSalary() {
+		// khai bao bien tinh luong
 		float sal;
 		sal = this.getSalaryRatio() * 730 + this.getAllowance() + teachingHour * 45;
 		return sal;
