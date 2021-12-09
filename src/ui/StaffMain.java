@@ -3,7 +3,8 @@ package ui;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import business.AlowanceCalulator;
+import business.AllowanceCalulator;
+import business.AllowanceCalulator;
 import business.EmployeeManagerment;
 import entity.EDegree;
 import entity.EPosition;
@@ -32,7 +33,7 @@ public class StaffMain {
 			case 1: // add nhan vien
 				Employee emp = createNewEmployee();
 				// cap nhat luong phu cap
-				float allowance = AlowanceCalulator.calculateAllowance(emp) ; 
+				float allowance = AllowanceCalulator.calculateAllowance(emp) ; 
 				emp.setAllowance(allowance) ;
 				empMan.addEmployee(emp) ; 
 				break;
