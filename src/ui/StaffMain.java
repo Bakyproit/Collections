@@ -58,6 +58,7 @@ public class StaffMain {
 								}
 							} catch (MyValidateException e) {
 								System.out.println(e.getErrorMessage());
+								sc.next() ;
 							}
 						} while (name == null || !name.matches("^[a-zA-Z\\s]+$"));
 						ArrayList<Employee> foundByName = empMan.searchByName(name);
@@ -78,6 +79,7 @@ public class StaffMain {
 								}
 							} catch (MyValidateException e) {
 								System.out.println(e.getErrorMessage());
+								sc.next() ;
 							}
 						} while (dept == null || !dept.matches("^[\\w\\s]+$"));
 						ArrayList<Employee> foundByDept = empMan.searchByFacultyAndDepartment(dept);
